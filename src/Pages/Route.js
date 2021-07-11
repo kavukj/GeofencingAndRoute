@@ -28,9 +28,9 @@ export const Route = () => {
         }
 
     }
-    throw Error
     return (
         <div className="root">
+            {alert("Development in progress")}
             <div className="dropdown">
                 <span className="label">Move to a Location </span>
                 <select className="options" onChange={handleChange}>

@@ -1,5 +1,5 @@
 .tabHeader{
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 7vh;
     top:0;
