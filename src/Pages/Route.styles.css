@@ -1,0 +1,16 @@
+.root{
+    font-size: 1rem;
+}
+.dropdown{
+    padding: 1.5vh 1vw 0;
+}
+.label{
+    width: 48vw;
+    float: left;
+}
+.options{
+    width: 42vw;
+}
+.note{
+    font-weight: light;
+}
