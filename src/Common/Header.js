@@ -13,19 +13,19 @@ export const Header = () => {
     return (
         <>
             <div>
-                {alert("Development in Progress")}
                 <Tabs className="tabHeader" selectedIndex={selectedTab} onSelect={handleTabChange} >
                     <TabList>
-                        <Tab className={`${selectedTab === 0 ? 'active' : ''} tabs`}>Find a Route</Tab>
-                        <Tab className={`${selectedTab === 1 ? 'active' : ''} tabs`}>Create Route</Tab>
+                        <Tab className={`${selectedTab === 0 ? 'active' : ''} tabs`}>Create Route</Tab>
+                        <Tab className={`${selectedTab === 1 ? 'active' : ''} tabs`}>Find a Route</Tab>
                         <Tab className={`${selectedTab === 2 ? 'active' : ''} tabs`}>Create Geofence</Tab>
                     </TabList>
                     <TabPanel className="tabPanel">
-                    <h2>Any content 1</h2>
-                    </TabPanel>
-                    <TabPanel className="tabPanel">
                         <Route />
                     </TabPanel>
+                    <TabPanel className="tabPanel">
+                        <h2>Any content 1</h2>
+                    </TabPanel>
+
                     <TabPanel className="tabPanel">
                         <h2>Any content 2</h2>
                     </TabPanel>

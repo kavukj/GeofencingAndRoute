@@ -41,20 +41,28 @@ export default AssignContext*/
 
 export const AssignContext = createContext({
     location:"Terminal1",
-    changeLocation: () => {}
+    route:null,
+    changeLocation: () => {},
+    changeRoute: () => {}
 })
 
 const {Provider, Consumer} = AssignContext
 
 const ContextProvider = ({children}) => {
     const [location, setLocation] = useState({lat:28.5555,lng:71.254865});
+    const [route,setRoute] = useState(null);
     const changeLocation = (loc) => {
         setLocation(loc)
+    }
+    const changeRoute = (routeGeofence) => {
+        setRoute(routeGeofence)
     }
     return(
         <Provider value={{
             location,
-            changeLocation
+            route,
+            changeLocation,
+            changeRoute
         }}>
             {children}
         </Provider>

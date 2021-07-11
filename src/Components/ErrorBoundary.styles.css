@@ -1,0 +1,27 @@
+.root{
+    background-color: black;
+    color: blanchedalmond;
+    min-height :100vh;
+    display :flex;
+    font-family :'Roboto', sans-serif;
+    flex-direction :column;
+    align-items: center;
+    justify-content: center;
+    perspective: 1200px;
+    padding: 0 7vw;
+}
+
+p{
+    font-weight: 100;
+}
+
+h1{
+    animation: swing var(2s) infinite alternate ease-in-out;
+    font-size: clamp(5rem, 40vmin, 20rem);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    margin-bottom: 1rem;
+    letter-spacing: 1rem;
+    background: radial-gradient(var(hsl(53, 0%, 90%)), var(hsl(53, 0%, 48%)) 45%) var(--x) 100% / 200% 200%;
+    color: white;
+}
